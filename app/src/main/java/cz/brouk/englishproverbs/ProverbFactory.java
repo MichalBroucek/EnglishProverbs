@@ -22,15 +22,6 @@ public class ProverbFactory {
         return proverbs.get(randomID);
     }
 
-    private void generateAllProverbs() {
-        proverbs = new ArrayList<Proverb>();
-        proverbs.add(new Proverb("K", "Kdo jinemu jamu kopa, sam do ni pada", "Kdo se snazi nekoho podvest sam skonci podvedeny"));
-        proverbs.add(new Proverb("L", "Lepsi vrabec v hrsti, nez holub na strese", "Lepsi se spokojit s jistym malem, nez chtim moc nejisteho"));
-        proverbs.add(new Proverb("X", "X prislovi ...", "X description ..."));
-        proverbs.add(new Proverb("Y", "Y prislovi ...", "Y description ..."));
-        proverbs.add(new Proverb("Z", "Z prislovi ...", "Z description ..."));
-    }
-
     public List<String> getAllProverbs() {
 
         final ArrayList<String> proverbsStr = new ArrayList<>();
@@ -57,5 +48,21 @@ public class ProverbFactory {
 
     public Proverb getProverb(int id) {
         return proverbs.get(id);
+    }
+
+
+    private void generateAllProverbs() {
+        proverbs = new ArrayList<>();
+        proverbs.add(new Proverb("A", "A cheerful wife is the spice of life.", "Concise Dictionary of European Proverbs (Abbreviated ed.)."));
+        proverbs.add(new Proverb("A", "A good mind possesses a kingdom.", "Note: Translated from Latin: Mens bona regnum possidet.\nMeaning: Material assets are fleeting, but intellectual assets will basically stay with you for the rest of your life. Therefore, intellectual assets are much more worth than material ones. Concise Dictionary of European Proverbs"));
+        proverbs.add(new Proverb("A", "A good name is the best of all treasures.", "Concise Dictionary of European Proverbs"));
+        proverbs.add(new Proverb("A", "The apple never falls far from the tree", "Meaning: Children are in many regards like their parents. The Oxford Dictionary of Proverbs"));
+        proverbs.add(new Proverb("A", "Advice most needed is least heeded.", "A Dictionary of American Proverbs (Reprint ed.)."));
+        proverbs.add(new Proverb("A", "Advisers run no risks.", "Meaning: It is easy to give advice, but hard to act. Concise Dictionary of European Proverbs "));
+        proverbs.add(new Proverb("A", "All are not thieves that the dogs bark at.", "Concise Dictionary of European Proverbs"));
+        proverbs.add(new Proverb("A", "All's fair in love and war.", "A Dictionary of American Proverbs"));
+        proverbs.add(new Proverb("A", "All are not friends that speak us fair.", "Concise Dictionary of European Proverbs"));
+        proverbs.add(new Proverb("A", "All roads lead to Rome.", "The Oxford Dictionary of Proverbs"));
+        proverbs.add(new Proverb("A", "All things come to those who wait.", "The Oxford Dictionary of Proverbs"));
     }
 }

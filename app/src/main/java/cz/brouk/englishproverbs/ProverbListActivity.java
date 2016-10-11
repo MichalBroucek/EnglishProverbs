@@ -46,16 +46,12 @@ public class ProverbListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                stupitFce(view, position);
-//                Toast.makeText(getApplicationContext(),
-//                        "Click ListItem Number " + position, Toast.LENGTH_LONG)
-//                        .show();
+                startProverbDetailActivity(view, position);
             }
         });
     }
 
-    public void stupitFce(View view, int position) {
-        // random proverb detail in new Activity
+    public void startProverbDetailActivity(View view, int position) {
         Intent intent = new Intent(this, ProverbDetail.class);
         Proverb proverb = MainActivity.proverbs.getProverb(position);
         intent.putExtra(MainActivity.PROVERB_TEXT, proverb.getProverb());
