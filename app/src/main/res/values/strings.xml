@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">English proverbs</string>
+    <string name="app_text">Search which english proverb contain specific text. Or list through all proverbs alphabetically</string>
+    <string name="search_default_text">Enter text for search</string>
+    <string name="search_button">Search proverbs</string>
+    <string name="all_button">List all proverbs</string>
+    <string name="random_button">This is random english proverb ...</string>
+    <string name="proverb_text">Proverb text</string>
+    <string name="proverb_description">Proverb description</string>
+</resources>
