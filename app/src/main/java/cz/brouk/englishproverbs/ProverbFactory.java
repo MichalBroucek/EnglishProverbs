@@ -22,7 +22,7 @@ public class ProverbFactory {
         return proverbs.get(randomID);
     }
 
-    public List<String> getAllProverbs() {
+    public List<String> getAllProverbsString() {
 
         final ArrayList<String> proverbsStr = new ArrayList<>();
 
@@ -50,6 +50,18 @@ public class ProverbFactory {
         return proverbs.get(id);
     }
 
+    public Proverb getProverb(String proverbString) {
+        for (Proverb proverb : proverbs) {
+            if (proverb.getProverb().equalsIgnoreCase(proverbString)) {
+                return proverb;
+            }
+        }
+        return null;
+    }
+
+    public List<Proverb> getAllProverbs() {
+        return this.proverbs;
+    }
 
     private void generateAllProverbs() {
         proverbs = new ArrayList<>();

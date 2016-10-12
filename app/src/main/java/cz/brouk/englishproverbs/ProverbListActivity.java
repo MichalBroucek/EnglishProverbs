@@ -1,23 +1,14 @@
 package cz.brouk.englishproverbs;
 
 import android.app.Activity;
-import android.app.ListActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class ProverbListActivity extends Activity {
 
@@ -33,27 +24,58 @@ public class ProverbListActivity extends Activity {
         // Find the ListView resource.
         mainListView = (ListView) findViewById( R.id.mainListView );
 
-        ArrayList<String> proverbList = new ArrayList<String>();
-        proverbList.addAll( MainActivity.proverbs.getAllProverbs() );
+        final ArrayList<String> proverbListString = new ArrayList<String>();    // List of proverbs strings to be displayed
+
+        Intent intent = getIntent();
+        String searchString = intent.getStringExtra(MainActivity.PROVERB_SEARCH_STRING);
+
+        if (searchString.equalsIgnoreCase(MainActivity.ALL_PROVERBS)) {
+            proverbListString.addAll(MainActivity.proverbs.getAllProverbsString());
+        }
+        else {
+            for (Proverb actualProverb : MainActivity.proverbs.getAllProverbs()) {
+                if (actualProverb.getProverb().contains(searchString)) {
+                    proverbListString.add(actualProverb.getProverb());
+                }
+            }
+
+            if (proverbListString.isEmpty()) {
+                // TODO: Display toast message
+                // and Go back ? Is it possible ?
+                proverbListString.add(String.format("None of proverbs contain '%s'.", searchString));
+            }
+        }
 
         // Create ArrayAdapter using the planet list.
-        listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, proverbList);
+        listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, proverbListString);
 
         // Set the ArrayAdapter as the ListView's adapter.
         mainListView.setAdapter(listAdapter);
+
+        // TODO: worked for complete list
+//        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view,
+//                                    int position, long id) {
+//                startProverbDetailActivity(view, position);
+//            }
+//        });
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                startProverbDetailActivity(view, position);
+                startProverbDetailActivity(view, proverbListString.get(position));
             }
         });
     }
 
-    public void startProverbDetailActivity(View view, int position) {
+    public void startProverbDetailActivity(View view, String proverbStr) {
         Intent intent = new Intent(this, ProverbDetail.class);
-        Proverb proverb = MainActivity.proverbs.getProverb(position);
+
+        // TODO: cannot just get proverb from position
+        Proverb proverb = MainActivity.proverbs.getProverb(proverbStr);
+
         intent.putExtra(MainActivity.PROVERB_TEXT, proverb.getProverb());
         intent.putExtra(MainActivity.PROVERB_DESCRIPTION, proverb.getDescription());
         startActivity(intent);
