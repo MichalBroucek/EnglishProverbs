@@ -1,14 +1,14 @@
 package cz.brouk.englishproverbs;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import java.util.List;
+import android.widget.Toast;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public final static String ALL_PROVERBS = "*";
 
     public static ProverbFactory proverbs;
+    private String searchingString;
     private String randomProverbText;
     private String randomProverbDescription;
 
@@ -34,17 +35,21 @@ public class MainActivity extends AppCompatActivity {
     public void searchProverb(View view) {
         // search for proverbs and create new Activity
 
-        // Get text from EditText
-        // Search all proverbs for specific words ...
-        // Get list of proverbs which match these words
-        // Open list of proverbs
-        // if none proverbs contain words than just display pop-up window (toast)
-
         Intent intent = new Intent(this, ProverbListActivity.class);
         EditText editText = (EditText) findViewById(R.id.searchText);
-        String searchingString = editText.getText().toString();
-        intent.putExtra(PROVERB_SEARCH_STRING, searchingString);
-        startActivity(intent);
+        searchingString = editText.getText().toString();
+
+        proverbs.generateSearchedProverbs(searchingString);
+        if (proverbs.getSearchedProverbs().size() > 0) {
+            intent.putExtra(PROVERB_SEARCH_STRING, searchingString);
+            startActivity(intent);
+        }
+        else {
+            // Display toast message
+            Context context = getApplicationContext();
+            CharSequence textToDisplay = "None of proverbs contains '" + searchingString + "' string.";
+            Toast.makeText(context, textToDisplay, Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void allProverbs(View view) {
@@ -64,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeProverbs() {
         this.proverbs = new ProverbFactory();
+        this.proverbs.clearSearchedProverbs();
+        this.searchingString = "";
         Proverb randomProverb = this.proverbs.getRandomProverb();
         this.randomProverbText = randomProverb.getProverb();
         this.randomProverbDescription = randomProverb.getDescription();
     }
-
-
 
 }

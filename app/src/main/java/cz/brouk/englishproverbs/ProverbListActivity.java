@@ -33,17 +33,16 @@ public class ProverbListActivity extends Activity {
             proverbListString.addAll(MainActivity.proverbs.getAllProverbsString());
         }
         else {
-            for (Proverb actualProverb : MainActivity.proverbs.getAllProverbs()) {
-                if (actualProverb.getProverb().contains(searchString)) {
-                    proverbListString.add(actualProverb.getProverb());
-                }
+
+            for (Proverb proverb : MainActivity.proverbs.getSearchedProverbs()) {
+                proverbListString.add(proverb.getProverb());
             }
 
-            if (proverbListString.isEmpty()) {
-                // TODO: Display toast message
-                // and Go back ? Is it possible ?
-                proverbListString.add(String.format("None of proverbs contain '%s'.", searchString));
-            }
+//            if (proverbListString.isEmpty()) {
+//                // TODO: Display toast message
+//                // and Go back ? Is it possible ?
+//                proverbListString.add(String.format("None of proverbs contain '%s'.", searchString));
+//            }
         }
 
         // Create ArrayAdapter using the planet list.

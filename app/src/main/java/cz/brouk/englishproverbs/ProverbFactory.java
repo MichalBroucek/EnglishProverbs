@@ -10,9 +10,11 @@ import java.util.Random;
 public class ProverbFactory {
 
     private List<Proverb> proverbs;
+    private List<Proverb> searchedProverbs;
 
     public ProverbFactory() {
         generateAllProverbs();
+        searchedProverbs = new ArrayList<>();
     }
 
     // TODO: verify behaviour
@@ -63,6 +65,8 @@ public class ProverbFactory {
         return this.proverbs;
     }
 
+    public List<Proverb> getSearchedProverbs(){ return this.searchedProverbs; }
+
     private void generateAllProverbs() {
         proverbs = new ArrayList<>();
         proverbs.add(new Proverb("A", "A cheerful wife is the spice of life.", "Concise Dictionary of European Proverbs (Abbreviated ed.)."));
@@ -76,5 +80,64 @@ public class ProverbFactory {
         proverbs.add(new Proverb("A", "All are not friends that speak us fair.", "Concise Dictionary of European Proverbs"));
         proverbs.add(new Proverb("A", "All roads lead to Rome.", "The Oxford Dictionary of Proverbs"));
         proverbs.add(new Proverb("A", "All things come to those who wait.", "The Oxford Dictionary of Proverbs"));
+        proverbs.add(new Proverb("A", "All work and no play makes Jack a dull boy.", "Be sure to take breaks from work and do something entertaining."));
+        proverbs.add(new Proverb("A", "An army marches on its stomach", "Simpson, John (2009). The Oxford Dictionary of Proverbs"));
+        proverbs.add(new Proverb("A", "March winds and April showers bring forth May flowers.", "Sometimes unpleasant things are required to bring good things."));
+        proverbs.add(new Proverb("A", "As you make your bed, so you must lie on it.", "You reap what you sow"));
+        proverbs.add(new Proverb("A", "A hedge between keeps friends green.", "It is best to have some sort of wall towards your neighbours."));
+        proverbs.add(new Proverb("A", "A verbal contract isn't worth the paper it's written on.", "A verbal contract is completely useless."));
+        proverbs.add(new Proverb("A", "Absence makes the heart grow fonder.", "When you're away from something, you miss it more."));
+        proverbs.add(new Proverb("A", "Actions speak louder than words.", "Hill Festetits, Kate Neely (2011). McGraw-Hill's Dictionary of American Idioms and Phrasal Verbs."));
+        proverbs.add(new Proverb("A", "A friend in need is a friend indeed.", "Prove thy friend ere thou have need; but, in-deed. A friend is never known till a man have need."));
+        proverbs.add(new Proverb("A", "All cats love fish but hate to get their paws wet.", "Everyone wants success but many lack the self-discipline to become successful."));
+        proverbs.add(new Proverb("A", "All for one and one for all.", "Although people associate it with Alexandre Dumas's The Three Musketeers it is much older. It is a translation of the Latin Unus pro omnibus, omnes pro uno, the motto for Switzerland."));
+        proverbs.add(new Proverb("A", "All good things must come to an end.", "Speake, Jennifer; Simpson, John (2009). The Oxford dictionary of proverbs. Oxford University Press."));
+        proverbs.add(new Proverb("A", "All's well that ends well.", "Title of a play by William Shakespeare. All is well that ends well. - Divers Proverbs."));
+        proverbs.add(new Proverb("A", "All that glisters is not gold.", "William Shakespeare, The Merchant of Venice, act II, scene 7. Often corrupted to: All that glitters is not gold."));
+        proverbs.add(new Proverb("A", "A staff is quickly found to beat a dog.", "Meaning: Someone who wants to be mean will find things to be mean about no matter what. Source: Strauss, Emmanuel (1998). Dictionary of European Proverbs."));
+        proverbs.add(new Proverb("A", "An apple a day keeps the doctor away.", "Cf. Notes and Queries magazine, Feb. 24, 1866, p. 153: 'Eat an apple on going to bed, // And you'll keep the doctor from earning his bread.'"));
+        proverbs.add(new Proverb("A", "As the old cock crows, so crows the young.", "Meaning: Children will become like older generations."));
+        proverbs.add(new Proverb("A", "Ask me no questions, I'll tell you no lies.", "Cf. Oliver Goldsmith's She Stoops to Conquer (1773): \"Ask me no questions, and I’ll tell you no fibs\"."));
+        proverbs.add(new Proverb("A", "A rotten apple injures its neighbors.", "A MAN IS NOT A PLAN Source: women."));
+        proverbs.add(new Proverb("B", "Bad news travels fast.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "A bad penny always turns up.", "Meaning: An unpopular person will always return to the place he came from."));
+        proverbs.add(new Proverb("B", "A bad settlement is better than a good lawsuit.", "Filipp, M. R. (2005). Covenants Not to Compete, Aspen."));
+        proverbs.add(new Proverb("B", "Be careful what you wish for, you just might get it.", "Potter, A. (2009). Be Careful What You Wish For, Hodder & Stoughton."));
+        proverbs.add(new Proverb("B", "Well begun is half done.", "Mieder, Wolfgang (1991). A Dictionary of American Proverbs (Reprint ed.)."));
+        proverbs.add(new Proverb("B", "A bellyful is one of meat, drink, or sorrow.", "H. Manser, Martin (2006). The Wordsworth Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "Bend the willow while it is young.", "Definition= influence young people while they are young and impressionable."));
+        proverbs.add(new Proverb("B", "The best things come in small packages.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "The best things in life are free.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "Better an egg today than a hen tomorrow.", "Strauss, Emanuel (1998). Concise Dictionary of European Proverbs."));
+        proverbs.add(new Proverb("B", "Better is the enemy of good.", "Meaning: The aim for perfection or mastery might be in the way of progress."));
+        proverbs.add(new Proverb("B", "Big thunder, little rain.", "..."));
+        proverbs.add(new Proverb("B", "Better late than never.", "Mieder, Wolfgang (1991). A Dictionary of American Proverbs"));
+        proverbs.add(new Proverb("B", "Better safe than sorry.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "Beware of false prophets, who come to you in sheep's clothing, but inwardly they are ravening wolves.", "Meaning: The seemingly most respectable people are quiet often scoundrels; Evil people often act innocently."));
+        proverbs.add(new Proverb("B", "Birds of a feather flock together.", "Meaning: People with important similarities seek out one another's company, often to the exclusion of others."));
+        proverbs.add(new Proverb("B", "Bitter pills may have blessed effects.", "Meaning: The remedy might be bitter, but the cure might be wonderful."));
+        proverbs.add(new Proverb("B", "Blood is thicker than water.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "Beauty is in the eyes of the beholder.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
+        proverbs.add(new Proverb("B", "A bad workman blames his tools.", "Never hand an ill workman good tools."));
+        proverbs.add(new Proverb("B", "Barking dogs seldom bite.", "Meaning: A person who often threatens rarely carries out his threats."));
+        proverbs.add(new Proverb("B", "Before criticizing a man, walk a mile in his shoes.", "Variant: Don't criticize someone before you walk a mile in their moccasins."));
+        proverbs.add(new Proverb("B", "Beggars can't be choosers.", "Meaning: If you are in a bad situation or do not have much to offer you must be content with whatever help you can get."));
+        proverbs.add(new Proverb("B", "The belly has no ears.", "This Proverb intimates, that there is no arguing the Matter with Hunger,\n the Mother of Impatience and Anger. - Divers Proverbs, Nathan Bailey, 1721"));
     }
+
+    public void generateSearchedProverbs(String searchString) {
+
+        clearSearchedProverbs();
+
+        for (Proverb actualProverb : this.proverbs) {
+            if (actualProverb.getProverb().contains(searchString)) {
+                searchedProverbs.add(actualProverb);
+            }
+        }
+    }
+
+    public void clearSearchedProverbs() {
+        this.searchedProverbs = new ArrayList<>();
+    }
+
 }
