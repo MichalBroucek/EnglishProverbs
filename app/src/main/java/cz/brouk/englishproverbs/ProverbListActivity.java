@@ -37,12 +37,6 @@ public class ProverbListActivity extends Activity {
             for (Proverb proverb : MainActivity.proverbs.getSearchedProverbs()) {
                 proverbListString.add(proverb.getProverb());
             }
-
-//            if (proverbListString.isEmpty()) {
-//                // TODO: Display toast message
-//                // and Go back ? Is it possible ?
-//                proverbListString.add(String.format("None of proverbs contain '%s'.", searchString));
-//            }
         }
 
         // Create ArrayAdapter using the planet list.
@@ -50,15 +44,6 @@ public class ProverbListActivity extends Activity {
 
         // Set the ArrayAdapter as the ListView's adapter.
         mainListView.setAdapter(listAdapter);
-
-        // TODO: worked for complete list
-//        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                startProverbDetailActivity(view, position);
-//            }
-//        });
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -72,7 +57,6 @@ public class ProverbListActivity extends Activity {
     public void startProverbDetailActivity(View view, String proverbStr) {
         Intent intent = new Intent(this, ProverbDetail.class);
 
-        // TODO: cannot just get proverb from position
         Proverb proverb = MainActivity.proverbs.getProverb(proverbStr);
 
         intent.putExtra(MainActivity.PROVERB_TEXT, proverb.getProverb());

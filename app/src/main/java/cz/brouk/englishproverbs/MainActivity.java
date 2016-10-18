@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void searchProverb(View view) {
         // search for proverbs and create new Activity
-
         Intent intent = new Intent(this, ProverbListActivity.class);
         EditText editText = (EditText) findViewById(R.id.searchText);
         searchingString = editText.getText().toString();

@@ -17,7 +17,6 @@ public class ProverbFactory {
         searchedProverbs = new ArrayList<>();
     }
 
-    // TODO: verify behaviour
     public Proverb getRandomProverb() {
         Random r = new Random();
         int randomID = r.nextInt(this.proverbs.size());
@@ -29,7 +28,6 @@ public class ProverbFactory {
         final ArrayList<String> proverbsStr = new ArrayList<>();
 
         if (this.proverbs != null) {
-
             for (Proverb pr : this.proverbs) {
                 proverbsStr.add(pr.getProverb());
             }
@@ -82,7 +80,6 @@ public class ProverbFactory {
         proverbs.add(new Proverb("A", "All things come to those who wait.", "The Oxford Dictionary of Proverbs"));
         proverbs.add(new Proverb("A", "All work and no play makes Jack a dull boy.", "Be sure to take breaks from work and do something entertaining."));
         proverbs.add(new Proverb("A", "An army marches on its stomach", "Simpson, John (2009). The Oxford Dictionary of Proverbs"));
-        proverbs.add(new Proverb("A", "March winds and April showers bring forth May flowers.", "Sometimes unpleasant things are required to bring good things."));
         proverbs.add(new Proverb("A", "As you make your bed, so you must lie on it.", "You reap what you sow"));
         proverbs.add(new Proverb("A", "A hedge between keeps friends green.", "It is best to have some sort of wall towards your neighbours."));
         proverbs.add(new Proverb("A", "A verbal contract isn't worth the paper it's written on.", "A verbal contract is completely useless."));
@@ -99,6 +96,7 @@ public class ProverbFactory {
         proverbs.add(new Proverb("A", "As the old cock crows, so crows the young.", "Meaning: Children will become like older generations."));
         proverbs.add(new Proverb("A", "Ask me no questions, I'll tell you no lies.", "Cf. Oliver Goldsmith's She Stoops to Conquer (1773): \"Ask me no questions, and I’ll tell you no fibs\"."));
         proverbs.add(new Proverb("A", "A rotten apple injures its neighbors.", "A MAN IS NOT A PLAN Source: women."));
+
         proverbs.add(new Proverb("B", "Bad news travels fast.", "Simpson, John (2009). The Oxford Dictionary of Proverbs."));
         proverbs.add(new Proverb("B", "A bad penny always turns up.", "Meaning: An unpopular person will always return to the place he came from."));
         proverbs.add(new Proverb("B", "A bad settlement is better than a good lawsuit.", "Filipp, M. R. (2005). Covenants Not to Compete, Aspen."));
@@ -123,6 +121,20 @@ public class ProverbFactory {
         proverbs.add(new Proverb("B", "Before criticizing a man, walk a mile in his shoes.", "Variant: Don't criticize someone before you walk a mile in their moccasins."));
         proverbs.add(new Proverb("B", "Beggars can't be choosers.", "Meaning: If you are in a bad situation or do not have much to offer you must be content with whatever help you can get."));
         proverbs.add(new Proverb("B", "The belly has no ears.", "This Proverb intimates, that there is no arguing the Matter with Hunger,\n the Mother of Impatience and Anger. - Divers Proverbs, Nathan Bailey, 1721"));
+        proverbs.add(new Proverb("B", "Better to be alone than in bad company.", "Source: Strauss, Emmanuel (1998). Dictionary of European Proverbs."));
+        proverbs.add(new Proverb("B", "Better the devil you know (than the devil you don't).", "Speake, Jennifer; Simpson, John (2009). The Oxford dictionary of proverbs."));
+        proverbs.add(new Proverb("B", "Better to remain silent and be thought a fool, than to open your mouth and remove all doubt.", "Variant: Better to remain silent and thought a fool, than to speak out and remove all doubt."));
+        proverbs.add(new Proverb("B", "Beware of Greeks bearing gifts.", "From Virgil's Aeneid Book II, line 48: Timeo Danaos et dona ferentes. Translation: I fear the Grecians even when they offer gifts."));
+        proverbs.add(new Proverb("B", "A bird in the hand is worth two in the bush.", "John Bunyan cites this traditional proverb in The Pilgrim's Progress."));
+        proverbs.add(new Proverb("B", "A blow with a word strikes deeper than a blow with a sword.", "It is an old saying, \"A blow with a word strikes deeper than a blow with a sword:\" and many men are as much galled with a calumny, a scurrilous and bitter jest, a libel, a pasquil, satire, apologue, epigram, stage-play or the like, as with any misfortune whatsoever."));
+        proverbs.add(new Proverb("B", "Bloom where you are planted.", "Meaning: It is often better to escalate your commitment rather than starting over with something new.\nOther meaning: Make use of your geographical advantages."));
+        proverbs.add(new Proverb("B", "Boys will be boys.", "Miedzian, Myriam (2002). Boys will be boys: breaking the link between masculinity and violence."));
+        proverbs.add(new Proverb("B", "Brag is a good Dog, but Holdfast is a better.", "Meaning: A variation of \"Talk is cheap\"."));
+        proverbs.add(new Proverb("B", "A broken watch is right two times a day.", "Meaning: A person who is wrong will eventually be right about something."));
+        proverbs.add(new Proverb("B", "A burnt child dreads the fire.", "Meaning: You will avoid an activity which has given you a bad experience for the rest of your life."));
+        proverbs.add(new Proverb("B", "By hook or by crook.", "Meaning: A thing to be achieved will be done in a straightforward way, but if it cannot, then it will be achieved by any means necessary."));
+
+        //proverbs.add(new Proverb("A", "March winds and April showers bring forth May flowers.", "Sometimes unpleasant things are required to bring good things."));
     }
 
     public void generateSearchedProverbs(String searchString) {

@@ -13,6 +13,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="@string/app_text" />
 
     <Space
@@ -22,12 +24,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:id="@+id/searchText"
         android:hint="@string/search_default_text"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="@string/search_button"
         android:id="@+id/buttonSearch"
         android:onClick="searchProverb" />
@@ -39,6 +45,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="@string/all_button"
         android:id="@+id/buttonAll"
         android:onClick="allProverbs"/>
@@ -50,6 +58,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:text="@string/random_button"
         android:id="@+id/button_random"
         android:onClick="randomProverbDetail" />
