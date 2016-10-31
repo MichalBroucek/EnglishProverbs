@@ -37,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.searchText);
         searchingString = editText.getText().toString();
 
+        if (searchingString == null || searchingString.isEmpty()) {
+            // Display toast message - search string has to be inserted
+            Context context = getApplicationContext();
+            CharSequence textToDisplay = "Please insert text to search in proverbs.";
+            Toast.makeText(context, textToDisplay, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         proverbs.generateSearchedProverbs(searchingString);
         if (proverbs.getSearchedProverbs().size() > 0) {
             intent.putExtra(PROVERB_SEARCH_STRING, searchingString);
