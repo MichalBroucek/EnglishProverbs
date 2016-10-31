@@ -29,39 +29,77 @@
         android:id="@+id/searchText"
         android:hint="@string/search_default_text"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/search_button"
-        android:id="@+id/buttonSearch"
-        android:onClick="searchProverb" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layoutContainer2"
+        android:orientation="horizontal">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="15pt" />
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05">
+        </RelativeLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/all_button"
-        android:id="@+id/buttonAll"
-        android:onClick="allProverbs"/>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="15pt" />
+            <!-- This is the part that's 90% of the total width. I'm inserting a LinearLayout and buttons.-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:orientation="vertical"
+                android:layout_gravity="top">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/random_button"
-        android:id="@+id/button_random"
-        android:onClick="randomProverbDetail" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/search_button"
+                    android:id="@+id/buttonSearch"
+                    android:onClick="searchProverb" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15pt" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/all_button"
+                    android:id="@+id/buttonAll"
+                    android:onClick="allProverbs"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15pt" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/random_button"
+                    android:id="@+id/button_random"
+                    android:onClick="randomProverbDetail" />
+
+            </LinearLayout>
+            <!-- 90% Width End-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.05">
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
