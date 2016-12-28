@@ -161,13 +161,32 @@ public class ProverbFactory {
         proverbs.add(new Proverb("A", "Attack is the best form of defence", "Unknown"));
 
         proverbs.add(new Proverb("B", "Bad money drives out good", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
-//        proverbs.add(new Proverb("B", "", "Unknown"));
+        proverbs.add(new Proverb("B", "Bad news travels fast", "Unknown"));
+        proverbs.add(new Proverb("B", "Barking dogs seldom bite", "Unknown"));
+        proverbs.add(new Proverb("B", "Be careful what you wish for", "Unknown"));
+        proverbs.add(new Proverb("B", "Beat swords into ploughshares", "Turn to peaceful pursuits and away from war."));
+        proverbs.add(new Proverb("B", "Beauty is in the eye of the beholder", "Literal meaning - the perception of beauty is subjective."));
+        proverbs.add(new Proverb("B", "Beauty is only skin deep", "Physical beauty is superficial."));
+        proverbs.add(new Proverb("B", "Beggars should not be choosers", "If you request something to be given you should not question what you are given."));
+        proverbs.add(new Proverb("B", "Behind every great man there's a great woman", "Literal meaning."));
+        proverbs.add(new Proverb("B", "Better late than never", "To arrive or do something later than expected isn't good, but it is better than not at all."));
+        proverbs.add(new Proverb("B", "Better safe than sorry", "Unknown"));
+        proverbs.add(new Proverb("B", "Better the Devil you know than the Devil you don't", "Unknown"));
+        proverbs.add(new Proverb("B", "Better to have loved and lost than never to have loved at all", "Literal meaning"));
+        proverbs.add(new Proverb("B", "Better to light a candle than to curse the darkness", "Unknown"));
+        proverbs.add(new Proverb("B", "Better to remain silent and be thought a fool that to speak and remove all doubt", "Unknown"));
+        proverbs.add(new Proverb("B", "Beware of Greeks bearing gifts", "Don't trust your enemies."));
+        proverbs.add(new Proverb("B", "Beware the Ides of March", "From Shakespeare's Julius Caesar, 1601. 'Beware the Ides of March' is the soothsayer's message to Julius Caesar, warning of his death."));
+        proverbs.add(new Proverb("B", "Big fish eat little fish", "Unknown"));
+        proverbs.add(new Proverb("B", "Birds of a feather flock together", "Those of similar taste congregate in groups."));
+        proverbs.add(new Proverb("B", "Blessed are the peacemakers", "Matthew 5:9 Blessed are the peacemakers: for they shall be called the children of God."));
+        proverbs.add(new Proverb("B", "Blood is thicker than water", "So it is, but this proverb hasn't to do with measures of viscosity. The expression, meaning that family bonds are closer than those of outsiders."));
+        proverbs.add(new Proverb("B", "Blue are the hills that are far away", "Unknown"));
+        proverbs.add(new Proverb("B", "Boys will be boys", "Unknown"));
+        proverbs.add(new Proverb("B", "Brevity is the soul of wit", "There's no briefer way of expressing this thought than Shakespeare's; making further explanation redundant."));
+        proverbs.add(new Proverb("B", "Business before pleasure", "Unknown"));
+
+        proverbs.add(new Proverb("C", "", "Unknown"));
 
         //proverbs.add(new Proverb("A", "March winds and April showers bring forth May flowers.", "Sometimes unpleasant things are required to bring good things."));
     }
