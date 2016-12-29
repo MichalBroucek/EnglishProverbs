@@ -186,7 +186,64 @@ public class ProverbFactory {
         proverbs.add(new Proverb("B", "Brevity is the soul of wit", "There's no briefer way of expressing this thought than Shakespeare's; making further explanation redundant."));
         proverbs.add(new Proverb("B", "Business before pleasure", "Unknown"));
 
-        proverbs.add(new Proverb("C", "", "Unknown"));
+        proverbs.add(new Proverb("C", "Caesar's wife must be above suspicion", "Unknown"));
+        proverbs.add(new Proverb("C", "Carpe diem", "The meaning is similar to that of many proverbs that we continue to use in English and is a warning to make the most of the time we have, with the implication that our time on Earth is short."));
+        proverbs.add(new Proverb("C", "Charity begins at home", "A proverb that expresses the overriding demands of taking care of one's family, before caring for others."));
+        proverbs.add(new Proverb("C", "Charity covers a multitude of sins", "Unknown"));
+        proverbs.add(new Proverb("C", "Cheaters never win and winners never cheat", "Unknown"));
+        proverbs.add(new Proverb("C", "Cheats never prosper", "Unknown"));
+        proverbs.add(new Proverb("C", "Children and fools tell the truth", "Unknown"));
+        proverbs.add(new Proverb("C", "Children should be seen and not heard", "Literal meaning."));
+        proverbs.add(new Proverb("C", "Christmas comes but once a year", "Unknown"));
+        proverbs.add(new Proverb("C", "Cleanliness is next to godliness", "Unknown"));
+        proverbs.add(new Proverb("C", "Clothes maketh the man", "Unknown"));
+        proverbs.add(new Proverb("C", "Cold hands, warm heart", "Unknown"));
+        proverbs.add(new Proverb("C", "Comparisons are odious", "Literal meaning."));
+        proverbs.add(new Proverb("C", "Count your blessings", "Unknown"));
+        proverbs.add(new Proverb("C", "Cowards may die many times before their death", "Unknown"));
+        proverbs.add(new Proverb("C", "Crime doesn't pay", "Unknown"));
+        proverbs.add(new Proverb("C", "Cut your coat to suit your cloth", "Unknown"));
+
+        proverbs.add(new Proverb("D", "Dead men tell no tales", "Unknown"));
+        proverbs.add(new Proverb("D", "Devil take the hindmost", "A proverbial phrase indicating that those who lag behind will receive no aid."));
+        proverbs.add(new Proverb("D", "Discretion is the better part of valour", "Literal meaning."));
+        proverbs.add(new Proverb("D", "Distance lends enchantment to the view", "Unknown"));
+        proverbs.add(new Proverb("D", "Do as I say, not as I do", "Unknown"));
+        proverbs.add(new Proverb("D", "Do as you would be done by", "Literal meaning."));
+        proverbs.add(new Proverb("D", "Do unto others as you would have them do to you", "Literal meaning."));
+        proverbs.add(new Proverb("D", "Don't bite the hand that feeds you", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't burn your bridges behind you", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't cast your pearls before swine", "Items of quality offered to those who aren't cultured enough to appreciate them."));
+        proverbs.add(new Proverb("D", "Don't change horses in midstream", "Don't change your leader or your basic position when part-way through a campaign or a project."));
+        proverbs.add(new Proverb("D", "Don't count your chickens before they are hatched", "Don't be hasty in evaluating one's assets."));
+        proverbs.add(new Proverb("D", "Don't cross the bridge till you come to it", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't cut off your nose to spite your face", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't get mad, get even", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't keep a dog and bark yourself", "Don't pay someone to do a task and then do it yourself."));
+        proverbs.add(new Proverb("D", "Don't leave your manners on the doorstep", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't let the bastards grind you down", "The meaning of this proverbial saying is self evident."));
+        proverbs.add(new Proverb("D", "Don't let the grass grow under your feet", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't meet troubles half-way", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't mix business with pleasure", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't put all your eggs in one basket", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't put the cart before the horse", "Reverse the accepted or logical order of things."));
+        proverbs.add(new Proverb("D", "Don't put new wine into old bottles", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't rock the boat", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't shoot the messenger", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't spoil the ship for a ha'porth of tar", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't sweat the small stuff", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't throw pearls to swine", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't teach your Grandma to suck eggs", "Don't offer advice to someone who has more experience than oneself."));
+        proverbs.add(new Proverb("D", "Don't throw the baby out with the bathwater", "Don't discard something valuable along with something undesirable."));
+        proverbs.add(new Proverb("D", "Don't trust anyone over thirty", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't try to run before you can walk", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't try to walk before you can crawl", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't upset the apple-cart", "Unknown"));
+        proverbs.add(new Proverb("D", "Don't wash your dirty linen in public", "Unknown"));
+        proverbs.add(new Proverb("D", "Doubt is the beginning not the end of wisdom", "Unknown"));
+
+        proverbs.add(new Proverb("E", "Early to bed and early to rise, makes a man healthy, wealthy and wise", "Literal meaning."));
+        proverbs.add(new Proverb("E", "", "Unknown"));
 
         //proverbs.add(new Proverb("A", "March winds and April showers bring forth May flowers.", "Sometimes unpleasant things are required to bring good things."));
     }
